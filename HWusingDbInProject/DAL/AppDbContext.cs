@@ -27,5 +27,8 @@ namespace HWusingDbInProject.DAL
         public DbSet<Hero> Heroes { get; set; }
         public DbSet<AboutUs> AboutUs { get; set; }
         public DbSet<Slider> Sliders { get; set; }
+        public DbSet<BuyCard> BuyCards { get; set; }
+        public DbSet<CardFeature> CardFeatures { get; set; }
+        public DbSet<CardFeaturesBuyCard> CardFeaturesBuyCards { get; set; }
     }
 }

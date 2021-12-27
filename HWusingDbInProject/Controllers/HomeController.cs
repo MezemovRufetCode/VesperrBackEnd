@@ -31,7 +31,8 @@ namespace HWusingDbInProject.Controllers
                 Clients=_context.Clients.ToList(),
                 Heroes=_context.Heroes.ToList(),
                 AboutUs=_context.AboutUs.ToList(),
-                Sliders=_context.Sliders.ToList()
+                Sliders=_context.Sliders.ToList(),
+                BuyCards=_context.BuyCards.Include(x=>x.CardFeaturesBuyCards).ThenInclude(x=>x.CardFeature).ToList()
             };
             return View(homeVM);
         }

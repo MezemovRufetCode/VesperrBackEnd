@@ -19,5 +19,7 @@ namespace HWusingDbInProject.ViewModels
         public List<Hero> Heroes { get; set; }
         public List<AboutUs> AboutUs { get; set; }
         public List<Slider> Sliders { get; set; }
+        public List<CardFeature> CardFeatures { get; set; }
+        public List<BuyCard> BuyCards { get; set; }
     }
 }
