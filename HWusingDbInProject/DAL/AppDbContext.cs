@@ -22,5 +22,10 @@ namespace HWusingDbInProject.DAL
         public DbSet<Service> Services { get; set; }
         public DbSet<Logo> Logo { get; set; }
         public DbSet<MoreService> MoreServices { get; set; }
+        public DbSet<Feature> Features { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Hero> Heroes { get; set; }
+        public DbSet<AboutUs> AboutUs { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
     }
 }

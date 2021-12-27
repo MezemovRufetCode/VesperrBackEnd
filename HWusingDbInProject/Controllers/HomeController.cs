@@ -26,7 +26,12 @@ namespace HWusingDbInProject.Controllers
                 Counts=_context.Counts.ToList(),
                 Services=_context.Services.ToList(),
                 Logos=_context.Logo.ToList(),
-                MoreServices=_context.MoreServices.ToList()
+                MoreServices=_context.MoreServices.ToList(),
+                Features=_context.Features.ToList(),
+                Clients=_context.Clients.ToList(),
+                Heroes=_context.Heroes.ToList(),
+                AboutUs=_context.AboutUs.ToList(),
+                Sliders=_context.Sliders.ToList()
             };
             return View(homeVM);
         }
