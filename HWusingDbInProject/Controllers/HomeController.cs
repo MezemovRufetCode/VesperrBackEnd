@@ -22,7 +22,11 @@ namespace HWusingDbInProject.Controllers
             HomeVM homeVM = new HomeVM()
             {
                 Employees = _context.Employees.Include(x => x.Socials).ToList(),
-                Categories = _context.Categories.Include(x => x.CardCategories).ThenInclude(x => x.Card).ToList()
+                Categories = _context.Categories.Include(x => x.CardCategories).ThenInclude(x => x.Card).ToList(),
+                Counts=_context.Counts.ToList(),
+                Services=_context.Services.ToList(),
+                Logos=_context.Logo.ToList(),
+                MoreServices=_context.MoreServices.ToList()
             };
             return View(homeVM);
         }

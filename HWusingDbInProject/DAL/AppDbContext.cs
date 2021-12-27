@@ -18,5 +18,9 @@ namespace HWusingDbInProject.DAL
         public DbSet<Card> Cards { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<CardCategory> CardCategories { get; set; }
+        public DbSet<Count> Counts { get; set; }
+        public DbSet<Service> Services { get; set; }
+        public DbSet<Logo> Logo { get; set; }
+        public DbSet<MoreService> MoreServices { get; set; }
     }
 }
